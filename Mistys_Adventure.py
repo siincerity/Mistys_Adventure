@@ -6,7 +6,6 @@ import pygame
 import RPi.GPIO as GPIO
 import pygame.mixer
 import sys
-#import blue
 
 
 # Define arrays of five possible outcome statements for each detected outcome
@@ -48,7 +47,6 @@ while True:
     if "clam" in output:
         #Change lights to purple
         os.popen("sudo python3 purple.py")
-        #print("Wyn detected.")
         # Select a random statement from the clam_statements array
         statement = random.choice(clam_statements)
         with open("Website/current_statement", "w") as file:
@@ -70,7 +68,6 @@ while True:
     elif "turtle" in output:
         #Change lights to green
         os.popen("sudo python3 green.py")
-        #print("turtle detected.")
         # Select a random statement from the turtle_statements array
         statement = random.choice(turtle_statements)
         with open("Website/current_statement", "w") as file:
@@ -92,7 +89,6 @@ while True:
     elif "starfish" in output:
         #Change lights to orange
         os.popen("sudo python3 orange.py")
-        #print("starfish detected.")
         # Select a random statement from the starfish_statements array
         statement = random.choice(starfish_statements)
         with open("Website/current_statement", "w") as file:
@@ -114,7 +110,6 @@ while True:
     elif "coral" in output:
         #Change lights to pink
         os.popen("sudo python3 pink.py")
-        #print("coral detected.")
         # Select a random statement from the coral_statements array
         statement = random.choice(coral_statements)
         with open("Website/current_statement", "w") as file:
@@ -136,7 +131,6 @@ while True:
     elif "shark" in output:
         #Change lights to red
         os.popen("sudo python3 red.py")
-        #print("shark detected.")
         # Select a random statement from the shark_statements array
         statement = random.choice(shark_statements)
         with open("Website/current_statement", "w") as file:
