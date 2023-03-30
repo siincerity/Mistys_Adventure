@@ -74,29 +74,6 @@ nodemon server.mjs
 Now simply pick up your fishing rod and play the game!
 
 
-## UML diagrams
-
-Here is a UML diagram of the back-end of the application detailing how the different modules interact with each other and their relationships.
-
-
-```mermaid
-graph LR
-A(shark.txt) --> D
-G(turtle.txt) --> D
-F(coral.txt) --> D
-B(clam.txt) --> D
-C(starfish.txt) --> D(Mistys_Adventure.py)
-D --> E(current_statement.txt)
-H(Read.py) --> D
-D --> H
-D --> I(COLOUR.py)
-D --> J(SOUND.mp3)
-D --> K(TO THE WEBSITE)
-```
-
-
-
-
 
 # Misty's Adventure - Front End
 
@@ -162,15 +139,12 @@ was coded using resources from the Web-03 practical material. The websocket was 
 ```mistysadventure.py```
 
 
-## UML diagram
 
-Here is a UML diagram of the front-end of the application detailing how the different modules interact with each other and thier relationships...
+# Libraries
 
-```mermaid
-graph LR
-F(Mistys_Adventure.py) --> D
-A(Controller.js) --> D
-B(Style.css) --> D
-C(index.html) --> D(Server.mjs + Websocket)
-D --> F
-D --> E(http://localhost:3000)
+- os (https://docs.python.org/3/library/os.html)
+- time (https://docs.python.org/3/library/time.html)
+- random (https://docs.python.org/3/library/random.html)
+- gTTS (https://pypi.org/project/gTTS/)
+- pygame (https://www.pygame.org/docs/)
+- RPi.GPIO (https://pypi.org/project/RPi.GPIO/)
