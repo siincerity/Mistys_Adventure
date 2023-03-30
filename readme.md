@@ -1,7 +1,18 @@
- # Misty's Adventure - Back End
-Welcome to **Misty's Adventure**. The game where you can fish for how you feel! This markdown file will cover all of the functions to get the back-end of the application all in working order!
+
+# Misty's Adventure
+Welcome to **Misty's Adventure**. The game where you can fish for how you feel! Here you can find all of the components and functions for the game!
+
+# Technical Components
+ 
+ - Raspberry Pi with an internet connection
+ - RFID scanner and RFID Tags
+ - LED strips
+ - Screen or tablet that can connect to the internet
+ - Speakers
 
 
+# Misty's Adventure - Back End
+ This section will cover all of the functions to get the back end of the application all in working order!
 
 # Files
 
@@ -49,6 +60,11 @@ As a prerequisite, it is recommended that you include the questions you want eac
 
 Also, make sure to include the necessary folders such as TTS and input, this is so the file paths line up with the program code.
 
+Install nodemon 
+  ```bash 
+  npm i -g nodemon
+  ```
+
 To run the application, either open the Mistys_Adventure.py file then run it through your preferred IDE, or use the terminal to navigate to the folder it is located in and type the following:
 
   ```bash
@@ -75,7 +91,7 @@ H(Read.py) --> D
 D --> H
 D --> I(COLOUR.py)
 D --> J(SOUND.mp3)
-D --> K(TO THE BACK END)
+D --> K(TO THE WEBSITE)
 ```
 
 
@@ -84,7 +100,7 @@ D --> K(TO THE BACK END)
 
 # Misty's Adventure - Front End
 
-Welcome to **Misty's Adventure**. The game where you can fish for how you feel! This markdown file will cover all of the functions to get the front-end of the application all in working order!
+This section will cover all of the functions to get the front end of the application all in working order!
 
 
 # Files
@@ -93,7 +109,7 @@ The front-end of the application has 3 main files:
 
 ``` index.html ```
 
-```function.js```
+```Controller.js```
 
 ```style.css``` 
 
@@ -101,7 +117,7 @@ The front-end of the application has 3 main files:
 
 ``` index.html ```
 is where all the front end items are being rendered. They are split into groups of various headings to keep things organised. The main bodies of text are kept within article tags to easily group content. Each article is given a tag from one to six. This is so we can use
-```function.js```
+```Controller.js```
 to animate the properties. This is done by collating the height of the page and assigning a region a certain colour. Then when passing into a new region indicated by the tag of the article changing, using the tween parameter to transition between the colors.
 ```style.css``` 
 allows for correct text formatting by adding padding and margin width so that when our device is in a different orientation, the text still remains clear and unobstructed.
@@ -112,11 +128,18 @@ This contains two elements the server which is ran on localhost using port 3000,
 
 As a prerequisite it is reccomended that you are running the latest version of Node
 > Before attempting to run the application install [Node](https://nodejs.org/en) here 
+> Before attempting to run the web server install [Express](https://expressjs.com/en/starter/installing.html) here 
 
 To install node run the command 
 
 ```bash
 npm install node
+```
+
+To install express run the command 
+
+```bash
+npm install express
 ```
 This will install all the dependencies for you and allow you to run the server. From then, open a new terminal and run the following command...
 ```bash
@@ -128,18 +151,13 @@ This will run the server, happy days!
 
 To connect to the webpage it's as easy as 1.2.3... once you have the server running, you then have to make sure you are on the same WIFI network as the Raspberry Pi then click this link to take to you to the local host.
 
-[Website](http://localhost:3000)
-
+[Website](http://localhost:3000) | *This will take you to localhost*
 
 ## Resources Used
 
-```bash
-server.mjs
-```
-Was made using resources from the Web-03 practicle Material. The websocket was made using code from [Digital Interaction - Context aware applications](https://digitalinteraction.github.io/technologies/iot-06-context.html) with the help and support from Dan Jackson. Further material from [Capture External Process](https://digitalinteraction.github.io/technologies/sample-external-process.html) was used to capture incoming data streams from
-```bash
-mistysadventure.py
-```
+```server.mjs```
+was coded using resources from the Web-03 practical material. The websocket was coded using code from [Digital Interaction - Context aware applications](https://digitalinteraction.github.io/technologies/iot-06-context.html) with the help and support from Dan Jackson. Further material from [Capture External Process](https://digitalinteraction.github.io/technologies/sample-external-process.html) was used to capture incoming data streams from
+```mistysadventure.py```
 
 
 ## UML diagram
