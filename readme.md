@@ -18,11 +18,11 @@ Welcome to **Misty's Adventure**. The game where you can fish for how you feel! 
 
 The back-end of the application has 9 python program files:
 
-   ``` Mistys_Adventure.py ```
+``` Mistys_Adventure.py ```
    
-   ```Read.py```
+```Read.py```
 
-  ```Write.py```
+```Write.py```
 
 ```blue.py```
 
@@ -105,13 +105,15 @@ This section will cover all of the functions to get the front end of the applica
 
 # Files
 
-The front-end of the application has 3 main files:
+The front-end of the application has 4 main files:
 
 ``` index.html ```
 
 ```Controller.js```
 
 ```style.css``` 
+
+```Server.mjs``` 
 
 ## How it works
 
